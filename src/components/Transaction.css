@@ -1,3 +1,10 @@
 .trasaction{
     display: flex;
+
+}
+#name{
+    align-self: flex-start;
+}
+#ammount{
+    align-self: flex-end
 }
