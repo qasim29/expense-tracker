@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import "./components/StatsPanel";
+import StatsPanel from "./components/StatsPanel";
 
-function App() {
+function App(Prop) {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div id="container1">
+        <h1>Expense Tracker</h1>
+      </div>
+      <div id="container2"> 
+        <h6>YOUR BALANCE</h6>
+        <h4>$23</h4>
+      </div>
+      <div id="container3">
+        <StatsPanel></StatsPanel>
+      </div>
     </div>
   );
 }
