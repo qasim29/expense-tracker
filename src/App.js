@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import StatsPanel from "./components/StatsPanel";
 import History from "./components/History";
+import AddTransaction from './components/AddTransaction';
 
 
 function App(Prop) {
@@ -19,6 +20,9 @@ function App(Prop) {
       </div>
       <div id="container4">
         <History></History>
+      </div>
+      <div id="container5">
+        <AddTransaction></AddTransaction>
       </div>
     </div>
   );

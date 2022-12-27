@@ -1,4 +1,4 @@
-import "./History.css";
+import "../css/History.css";
 import Transaction from "./Transaction";
 
 const History = (Prop) => {
