@@ -11,6 +11,12 @@ const History = (Prop) => {
       <div>
         <Transaction></Transaction>
       </div>
+      <div>
+        <Transaction></Transaction>
+      </div>
+      <div>
+        <Transaction></Transaction>
+      </div>
     </div>
   );
 };

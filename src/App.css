@@ -52,10 +52,15 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular';
 
 
 
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 400px) {
+  .App {
+    width:100%;
+    margin: 0%;
   }
+  *,h4#ammount,h4#name{
+    font-size: 15px;
+  }
+
+  ``
 }
 
