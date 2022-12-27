@@ -8,6 +8,7 @@ const AddTransaction = () => {
             <div>
                 <h3>Add new Transaction</h3>
             </div>
+            <hr></hr>
             <div>
                 <TransactionDetails></TransactionDetails>
             </div>

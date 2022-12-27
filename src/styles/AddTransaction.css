@@ -1,0 +1,14 @@
+.add-transaction{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    margin-top: 1em;
+}
+.add-transaction div h3{
+    padding-left: 8%;
+    font-size: 30px  !important;
+}
+.add-transaction>div{
+    flex:1;
+}
+

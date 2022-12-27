@@ -4,9 +4,9 @@
     row-gap: 1em;
    
 }
-.hContainer>:nth-child(1){
+.hContainer div h1{
     padding-left: 8%;
-    font-size: 15px;
+    font-size: 30px !important;
 }
 .hContainer>div{
     flex:1;
