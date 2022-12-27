@@ -1,4 +1,5 @@
-import './StatsPanel.css'
+import '../styles/StatsPanel.css'
+
 function StatsPanel() {
   return (
     <div className="StatsPanel">

@@ -1,7 +1,7 @@
 
 import TransactionDetails from './TransactionDetails';
-import './AddTransaction.css';
-
+import '../styles/AddTransaction.css';
+    
 const AddTransaction = () => {
     return (
         <div className="add-transaction">   

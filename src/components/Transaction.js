@@ -1,4 +1,4 @@
-import "../CSS/Transaction.css";
+  import "../styles/Transaction.css";
 
 function Transaction(Prop) {
   return (
@@ -11,5 +11,6 @@ function Transaction(Prop) {
     </div>
   );
 }
+
 
 export default Transaction;

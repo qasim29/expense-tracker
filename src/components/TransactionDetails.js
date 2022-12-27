@@ -1,2 +1,10 @@
-import './TransactionDetails.css'; 
-import "../CSS/Transaction.css";
+import "../styles/TransactionDetails.css";
+
+const TransactionDetails = ()=>{
+    return (
+        <div className="transaction-details">
+        </div>
+        );
+}
+
+export default TransactionDetails;
