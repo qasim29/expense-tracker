@@ -1,13 +1,13 @@
 .App{
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 1em;
   align-items: center;
 
   width: 80%;
   margin: 10%;
   margin-top: 2%;
-  
+  padding-bottom: 3%;  
   border-radius: 1.2rem;
   box-shadow: 20px 20px 2px rgba(0, 0, 0, 0.25);
   background-color: whitesmoke;
@@ -17,10 +17,16 @@
   padding-top: 2em;
   width:80%;
   text-align: center;
+  color: purple;
+  font-size: 20px;
+
 }
 #container2{
   align-self: flex-start;
   margin-left:10%;
+  font-size: 40px;
+  font-family: 'Lucida Sans';
+
 }
 #container3{
   width:95%;
@@ -28,27 +34,6 @@
 #container4{
   width:95%;
 }
-
-h1{
-  color: purple;
-  font-size: 35px;
-}
-h4{
-  font-size: 40px;
-
-}
-h6{
-font-size: 17px;
-font-family: 'Lucida Sans', 'Lucida Sans Regular';
-
-}
-/* .App StatsPanel {
-  text-align: center;
-  color: purple;
-  flex: 100%;
-  margin: 0px;
-  width: 100%;
-} */
 
 
 

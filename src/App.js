@@ -12,7 +12,7 @@ function App(Prop) {
       </div>
       <div id="container2"> 
         <h6>YOUR BALANCE</h6>
-        <h4>$23</h4>
+        <h4><span style={{color: (12, 198, 12)}}>$</span>23</h4>
       </div>
       <div id="container3">
         <StatsPanel></StatsPanel>

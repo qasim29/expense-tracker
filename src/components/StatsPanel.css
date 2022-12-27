@@ -3,16 +3,17 @@
   display: flex;
   height: 120px;
 
-  justify-content: center;
+  /* justify-content: center; */
   border-radius: 1.2rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 .container div {
-  flex: 50%;
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
-  row-gap: 10px;
+  row-gap: 0.1em;
+  font-size: 25px;
     
 }

@@ -4,15 +4,11 @@
     row-gap: 1em;
    
 }
+.hContainer>:nth-child(1){
+    padding-left: 8%;
+    font-size: 15px;
+}
 .hContainer>div{
-    /* align-self: flex-start;  */
     flex:1;
 }
 
-.transaction{
-    /* align-self: flex-start;  */
-    border-radius: 2.2rem;
-    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.25);
-    padding: 3%;
-    background-color:rgb(249, 197, 206);
-}
