@@ -1,14 +1,18 @@
 import "./History.css";
+import Transaction from "./Transaction";
 
-const history = (Prop) => {
+const History = (Prop) => {
   return (
-    <div>
+    <div className="hContainer">
       <div>
         <h1>History</h1>
       </div>
-      
+      <hr></hr>
+      <div>
+        <Transaction></Transaction>
+      </div>
     </div>
   );
 };
 
-export default history;
+export default History;

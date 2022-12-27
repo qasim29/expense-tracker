@@ -1,10 +1,23 @@
-.trasaction{
+.transaction{
     display: flex;
-
+    /* flex-direction: row; */
+    border-radius: 1.2rem;
+    box-shadow: 20px 20px 2px rgba(0, 0, 0, 0.25);
+    /* flex:1; */
+    /* column-gap: 20%; */
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
+    /* justify-content: center;
+    justify-self: center; */
 }
 #name{
-    align-self: flex-start;
+    /* align-self: flex-start; */
+    font-size: 20px;
+    flex:1;
 }
 #ammount{
-    align-self: flex-end
+    font-size: 20px;
+    text-align: end;
+    /* -self: flex-end; */
+    flex:1;
 }

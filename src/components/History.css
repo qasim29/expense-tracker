@@ -1,0 +1,9 @@
+.hContainer{
+    display: flex;
+    flex-direction: column;
+   
+}
+.hContainer>div{
+    /* align-self: flex-start;  */
+    flex:1;
+}

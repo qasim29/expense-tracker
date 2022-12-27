@@ -1,7 +1,8 @@
 import logo from "./logo.svg";
 import "./App.css";
-import "./components/StatsPanel";
 import StatsPanel from "./components/StatsPanel";
+import History from "./components/History";
+
 
 function App(Prop) {
   return (
@@ -15,6 +16,9 @@ function App(Prop) {
       </div>
       <div id="container3">
         <StatsPanel></StatsPanel>
+      </div>
+      <div id="container4">
+        <History></History>
       </div>
     </div>
   );
