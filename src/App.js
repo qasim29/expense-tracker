@@ -2,11 +2,12 @@ import "./styles/App.css";
 import StatsPanel from "./components/StatsPanel";
 import History from "./components/History";
 import AddTransaction from './components/AddTransaction';
+import Card from "./components/Card";
 
 
 function App(Prop) {
   return (
-    <div className="App">
+    <Card className="App">
       <div id="container1">
         <h1>Expense Tracker</h1>
       </div>
@@ -23,7 +24,7 @@ function App(Prop) {
       <div id="container5">
         <AddTransaction></AddTransaction>
       </div>
-    </div>
+    </Card>
   );
 }
 

@@ -1,8 +1,9 @@
 import "../styles/TransactionDetails.css";
+import Card from "./Card";
 
 const TransactionDetails = () => {
   return (
-    <div className="transaction-details">
+    <Card className="transaction-details">
       <form>
         <label>Title</label>
         <input type="text" name="title" placeholder="Title" />
@@ -21,11 +22,10 @@ const TransactionDetails = () => {
           <br></br>
         </div>
 
-
         {/* button */}
         <input type="submit" value="Send" />
       </form>
-    </div>
+    </Card>
   );
 };
 

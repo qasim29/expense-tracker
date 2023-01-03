@@ -1,8 +1,9 @@
 import '../styles/StatsPanel.css'
+import Card from './Card';
 
 function StatsPanel() {
   return (
-    <div className="StatsPanel">
+    <Card className="StatsPanel">
       <div className="container">
         <div>
           <h3>Income</h3>
@@ -14,7 +15,7 @@ function StatsPanel() {
           <h4 style={{ color: "red" }}>100.00</h4>
         </div>
       </div>
-    </div>
+    </Card>
   );
 }
 
