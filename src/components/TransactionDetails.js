@@ -2,6 +2,8 @@ import "../styles/TransactionDetails.css";
 import Card from "./Card";
 
 const TransactionDetails = () => {
+  const clickHandler = () => {  }
+
   return (
     <Card className="transaction-details">
       <form>
@@ -11,19 +13,19 @@ const TransactionDetails = () => {
         <input type="text" name="amount" placeholder="Amount" />
         {/* radio buttons */}
         <div>
-          <input type="radio" id="html" name="fav_language" value="HTML" /> 
+          <input type="radio" id="html" name="fav_language" value="HTML" />
           <label for="html">HTML</label>
           <br></br>
         </div>
 
         <div>
-          <input type="radio" id="css" name="fav_language" value="CSS" /> 
+          <input type="radio" id="css" name="fav_language" value="CSS" />
           <label for="css">CSS</label>
           <br></br>
         </div>
 
         {/* button */}
-        <input type="submit" value="Send" />
+        <input onClick={clickHandler} type="submit" value="Send" />
       </form>
     </Card>
   );

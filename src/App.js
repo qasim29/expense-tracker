@@ -40,11 +40,11 @@ function App() {
       <div id="container3">
         <StatsPanel></StatsPanel>
       </div>
-      <div id="container4">
-        <History expenses={expenses}></History>
-      </div>
       <div id="container5">
         <AddTransaction></AddTransaction>
+      </div>
+      <div id="container4">
+        <History expenses={expenses}></History>
       </div>
     </Card>
   );
