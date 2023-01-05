@@ -1,7 +1,7 @@
 import "../styles/History.css";
 import Transaction from "./Transaction";
 
-const History = (Prop) => {
+const History = (props) => {
   return (
     <div className="hContainer">
       <div>
@@ -9,13 +9,22 @@ const History = (Prop) => {
       </div>
       <hr></hr>
       <div>
-        <Transaction></Transaction>
+        <Transaction 
+          title={props.expenses[0].title}
+          amount={props.expenses[0].amount}
+          ></Transaction>
       </div>
       <div>
-        <Transaction></Transaction>
+      <Transaction 
+          title={props.expenses[1].title}
+          amount={props.expenses[1].amount}
+          ></Transaction>
       </div>
       <div>
-        <Transaction></Transaction>
+      <Transaction 
+          title={props.expenses[2].title}
+          amount={props.expenses[2].amount}
+          ></Transaction>
       </div>
     </div>
   );
