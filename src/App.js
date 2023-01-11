@@ -3,28 +3,26 @@ import StatsPanel from "./components/StatsPanel";
 import History from "./components/History";
 import AddTransaction from "./components/AddTransaction";
 import Card from "./components/Card";
+import { useState } from "react";
+
+const dummy_Expenses = [
+  {
+    id: "e1",
+    title: "car",
+    amount: 0,
+    date: null,
+  },
+];
 
 function App() {
-  const expenses = [
-    {
-      id: "e1",
-      title: "car",
-      amount: 0,
-      date: null,
-    },
-    {
-      id: "e2",
-      title: "yaucht",
-      amount: 0,
-      date: null,
-    },
-    {
-      id: "e3",
-      title: "jet",
-      amount: 0,
-      date: null,
-    },
-  ];
+  const [expenses, setExpense] = useState(dummy_Expenses);
+
+  const addExpense = (expense) => { 
+    setExpense((prevState) =>{
+      return [expense,...prevState];    
+    });
+    console.log(expenses);
+  }
 
   return (
     <Card className="App">
@@ -41,8 +39,9 @@ function App() {
         <StatsPanel></StatsPanel>
       </div>
       <div id="container5">
-        <AddTransaction></AddTransaction>
+        <AddTransaction addExpense={addExpense}></AddTransaction>
       </div>
+ 
       <div id="container4">
         <History expenses={expenses}></History>
       </div>

@@ -4,9 +4,9 @@
   row-gap: 1em;
   align-items: center;
 
-  width: 40%;
-  margin-left: 30%;
-  margin-right: 30%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
 
   margin-top: 2%;
   padding-bottom: 2%;  
@@ -43,14 +43,14 @@
 
 
 
-@media (max-width: 400px) {
+@media (max-width: 860px) {
   .App {
-    width:100%;
-    margin: 0%;
+    width:80%;
+    margin-left: 10%;
     min-width:220px ;
   }
   *,h4#ammount,h4#name{
-    font-size: 15px;
+    font-size: 35px !important;
   }
 
   

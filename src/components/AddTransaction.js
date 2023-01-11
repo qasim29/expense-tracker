@@ -2,7 +2,7 @@
 import TransactionDetails from './TransactionDetails';
 import '../styles/AddTransaction.css';
     
-const AddTransaction = () => {
+const AddTransaction = (props) => {
     return (
         <div className="add-transaction">   
             <div>
@@ -10,7 +10,7 @@ const AddTransaction = () => {
             </div>
             <hr></hr>
             <div>
-                <TransactionDetails></TransactionDetails>
+                <TransactionDetails addExpense={props.addExpense}></TransactionDetails>
             </div>
         </div>
     );

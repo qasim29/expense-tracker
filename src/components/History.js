@@ -9,22 +9,14 @@ const History = (props) => {
       </div>
       <hr></hr>
       <div>
-        <Transaction 
-          title={props.expenses[0].title}
-          amount={props.expenses[0].amount}
-          ></Transaction>
-      </div>
-      <div>
-      <Transaction 
-          title={props.expenses[1].title}
-          amount={props.expenses[1].amount}
-          ></Transaction>
-      </div>
-      <div>
-      <Transaction 
-          title={props.expenses[2].title}
-          amount={props.expenses[2].amount}
-          ></Transaction>
+        {props.expenses.map((expenses) => (
+          <Transaction
+            title={expenses.title}
+            amount={expenses.amount}
+            status={expenses.status}
+            date={expenses.date}
+          />
+        ))}
       </div>
     </div>
   );
