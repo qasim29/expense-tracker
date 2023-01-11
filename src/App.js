@@ -1,17 +1,17 @@
+import { useState } from "react";
 import "./styles/App.css";
 import StatsPanel from "./components/StatsPanel";
 import History from "./components/History";
 import AddTransaction from "./components/AddTransaction";
 import Card from "./components/Card";
-import { useState } from "react";
 
 const dummy_Expenses = [
-  {
-    id: "e1",
-    title: "car",
-    amount: 0,
-    date: null,
-  },
+  // {
+  //   id: "e1",
+  //   title: "car",
+  //   amount: 0,
+  //   date: null,
+  // },
 ];
 
 function App() {
@@ -19,9 +19,18 @@ function App() {
 
   const addExpense = (expense) => { 
     setExpense((prevState) =>{
-      return [expense,...prevState];    
+      const arr= [expense,...prevState];    
+      console.log(arr);
+      return arr;
     });
-    console.log(expenses);
+  }
+  const deleteExpense=(id)=>{
+    setExpense((prevState)=>{
+      const ex=prevState.filter(obj => obj.id !== id)
+      console.log(ex);
+      return ex;
+    });
+
   }
 
   return (
@@ -43,7 +52,7 @@ function App() {
       </div>
  
       <div id="container4">
-        <History expenses={expenses}></History>
+        <History expenses={expenses} deleteExpense={deleteExpense}></History>
       </div>
     </Card>
   );

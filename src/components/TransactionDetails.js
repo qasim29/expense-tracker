@@ -11,10 +11,10 @@ const TransactionDetails = (props) => {
   const clickHandler = (event) => {
     event.preventDefault();
     const expense = {
-      id:Math.random().toString,
+      id:Math.random().toString(),
       title: enteredTitle,
       amount: enteredAmount,
-      Status: rBtn,
+      status: rBtn,
     }
 
     props.addExpense(expense);
@@ -66,7 +66,7 @@ const TransactionDetails = (props) => {
             value="ADD"
             onChange={RadioBtnHandler}
           />
-          <label for="html">Add</label>
+          <label >Add</label>
           <br></br>
         </div>
 
@@ -78,7 +78,7 @@ const TransactionDetails = (props) => {
             value="DEDUCT"
             onChange={RadioBtnHandler}
           />
-          <label for="css">Deduct</label>
+          <label >Deduct</label>
           <br></br>
         </div>
 

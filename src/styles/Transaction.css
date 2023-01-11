@@ -20,13 +20,21 @@
     /* text-align: end; */
     /* flex:1; */
 }
-#status{
+#status-green{
     width: 2%;
     margin-left: 5%; 
     flex:1;
     background-color: rgb(12, 198, 12);
     border-radius:2rem;
 }
+#status-red{
+    width: 2%;
+    margin-left: 5%; 
+    flex:1;
+    background-color: red;
+    border-radius:2rem;
+}
+
 .button{
     background-color: red;
     color: white;

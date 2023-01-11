@@ -1,21 +1,16 @@
 import "../styles/Transaction.css";
 import Card from "./Card";
-// import React, { useState } from "react";
-function Transaction(props) {
-  // const [title, setTitle] = useState(props.title);
 
+function Transaction(props) {
   const clickHandler = () => {
-    // setTitle("twerrew");
-    // console.log(title);
-    
-    // {/*  will use thid function to delete transaction */}
-  
+    props.deleteExpense(props.id);
   };
 
+  let tstatus = props.status === "DEDUCT" ? "status-red" : "status-green";
 
   return (
     <Card className="transaction">
-      <div id="status"></div>
+      <div id={tstatus}></div>
 
       <div className="values">
         <h4 id="datek">{new Date().toUTCString().split("2023")[0]}</h4>
