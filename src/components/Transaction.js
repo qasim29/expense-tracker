@@ -6,14 +6,24 @@ function Transaction(props) {
     props.deleteExpense(props.id);
   };
 
-  let tstatus = props.status === "DEDUCT" ? "status-red" : "status-green";
-
+// write code for email validation using regex
+  // CASE #1
+  // let tstatus = props.status === "DEDUCT" ? "status-red" : "status-green";
   return (
     <Card className="transaction">
-      <div id={tstatus}></div>
+      {/* CASE #1 */}
+      {/* <div id={tstatus}></div> */}
+
+
+      {/*   // CASE #2 */}
+      {props.status === "DEDUCT" ? (
+        <div id="status-red"></div>
+      ) : (
+        <div id="status-green"></div>
+      )}
 
       <div className="values">
-        <h4 id="datek">{new Date().toUTCString().split("2023")[0]}</h4>
+        <h4 id="datek">{props.date}</h4>
         <h4 id="name">{props.title}</h4>
         <h4 id="ammount">{props.amount}</h4>
       </div>

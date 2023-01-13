@@ -15,13 +15,15 @@ const TransactionDetails = (props) => {
       title: enteredTitle,
       amount: enteredAmount,
       status: rBtn,
+      date: new Date().toLocaleString()
     }
+    
 
     props.addExpense(expense);
 // 
-    setEnteredTitle("");
-    setEnteredAmount("");
-    setRBtn("");
+    setEnteredTitle(prevState=> "");
+    setEnteredAmount(prevState=> "");
+    // setRBtn(prevState=> "");
     // console.log(expense);
     // console.log(variable);    
     
